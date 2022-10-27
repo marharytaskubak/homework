@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        table {
+            text-align: center;
+        }
+        td{
+            padding: 10px;
+        }
+        thead{
+            background-color: #586cdf;
+        }
+        tr{
+            background-color: yellow;
+        }
+        tr:first-of-type{
+            background-color: #586cdf;
+        }
+        tfoot tr td{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="500px" height="250px" cellspacing="1">
+        <thead>
+            <tr>
+                <td colspan="4">MY FIRST TABLE</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First cell</td>
+                <td>Second cell</td>
+                <td rowspan="3" colspan="2" bgcolor="yellow"> 6 cells merged together </td>
+            </tr>
+            <tr>
+                <td colspan="2">2 cells merged into one</td>
+            </tr>
+            <tr>
+                <td>1 cell <br> 3d row</td>
+                <td>2nd cells <br> 3rd row</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="4">Do you like tables?</td> </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

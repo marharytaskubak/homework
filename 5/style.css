@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #E0E0E0;
+    max-width: 200px;
+    height: 226px;
+    margin: 15px;
+    padding-bottom: 18px;
+}
+
+.image {
+    text-align: center;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    /*или  display: block;
+    width: 100% */
+}
+
+p, h3 {
+    text-align: center;
+}
+
+h3 {
+    size: 18px;
+    margin: 10px auto;
+}

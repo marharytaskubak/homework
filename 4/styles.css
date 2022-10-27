@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(240, 234, 226);
+    padding: 50px;
+}
+
+ul {
+    padding: 20px;
+}
+
+.list {
+    background-color: rgb(223, 223, 193);  
+}
+
+.list li:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+.main {
+    line-height: 30px;
+    background-color: rgb(181, 242, 242);
+}
+
+.paragraphs .paragraph {
+    background-color: darkkhaki;
+}
+
+span {
+    background-color: blueviolet;
+}
+
+#paragraph2 {
+    background-color: #bca;
+}
+
+#paragraph2 + p {
+    background-color: blue;
+}
+
+.main > span {
+    background-color: cadetblue;
+}
+
+main p::first-line {
+    color: brown;
+}
+
+.paragraph ~ p {
+    background-color: aliceblue;
+}
+
+.paragraph:last-child {
+    background-color: #ff1;
+}
+
+a:hover {
+    background-color: green;
+}
+
+a[href^="http"] {
+    background-color: coral;
+}
+
+a[href^="http"]:hover {
+    background-color: green;
+}
+
+footer a {
+    background-color: red;
+} 

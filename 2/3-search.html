@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук авто</title>
+</head>
+<body>
+        <form action="https://fom.in.ua/echo" method="get">
+            <label for="search">Пошук </label>
+            <input type="text" id="search">
+            <div>
+                <p>Тип кузова</p> 
+                <select name="body">
+                    <option>Седан</option>
+                    <option selected>Універсал</option>
+                    <option>Хетчбек</option>
+                    <option>Мінівен</option>
+                    <option>Позашляховик (кросовер)
+                    </option>
+                    <option>Купе</option>
+                    <option>Пікап</option>
+                    <option>Кабріолет</option>
+                </select>
+            </div>
+            <div>
+                <p>Марка авто</p>
+                <select name="brand">
+                    <option></option>
+                    <option>BMW</option>
+                    <option>Citroen</option>
+                    <option>Lexus</option>
+                    <option>Mitsubishi</option>
+                    <option>Ford</option>
+                    <option>Renault</option>
+                    <option>Mazda</option>
+                    <option>Mini</option>
+                    <option>Peugeot</option>
+                    <option>Skoda</option>
+                    <option>Toyota</option>
+                </select>
+            </div>
+            <div>
+                <p>Країна виробник</p>
+                <select name="country">
+                    <option>Німеччина</option>
+                    <option>Японія</option>
+                    <option>США</option>
+                    <option selected>Франція</option>
+                </select>
+            </div>
+            <div>
+                <p>Ціна:</p>
+                <p>Від 100,000 грн <input type="range" min="100000" max="1500000" step="100000" value="100000" name="price">до 15000,000 грн</p> 
+            </div>
+            <div>
+                <p>Рік випуску: </p>
+                <select name="year" multiple>
+                    <option></option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                </select>
+            </div>
+            <div>
+                <p>Стан: </p>
+                <p><input type="checkbox" name="condition1">Бита</p>
+                <p><input type="checkbox" name="condition2">У кредиті</p>
+                <p><input type="checkbox" name="condition3">Нерозмитнена</p>
+                <p><input type="checkbox" checked name="condition4">В ідеальному стані</p>
+            </div>
+            <div>
+                <p>Тип палива</p>
+                <select name="fuel">
+                    <option>Бензин</option>
+                    <option>Дизельне</option>
+                    <option>Газ</option>
+                    <option>Електроенергія</option>
+                </select>
+            </div>
+            <div><p>Тип коробки передач</p>
+                <p><input type="radio" name="gear_box" id="hydraulic"><label for="hydraulic">Гідравлічна коробка-автомат</label></p>
+                <p><input type="radio" name="gear_box" id="mechanics"> <label for="mechanics">Роботизовано механіка</label> </p>
+                <p><input type="radio" name="gear_box" id="stepless"> <label for="stepless">Варіатор (безступенева коробка)</label> </p> 
+            </div>
+            <div>
+                <p>Колір</p>
+                <input type="color" value="#A144BB" name="color">
+            </div>
+            <div>
+                <p>Комфорт</p>
+                <select name="comfort">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>S</option>
+                    <option>F</option>
+                    <option>J</option>
+                    <option>M</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Пошук</button>
+                <input type="reset" value="Очистити">
+            </div>
+        </form>
+</body>
+</html>
